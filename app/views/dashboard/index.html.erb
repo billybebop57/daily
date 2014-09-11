@@ -1,0 +1,202 @@
+<div class="container">
+
+<h1>Bankroll</h1>
+<h2>$<%= @bankroll.bankroll %></h2>
+
+<h3>H2H and 50/50: $<%= @bankroll.fifty_fifty %></h3>
+<h3>3-Team: $<%= @bankroll.three_team %></h3>
+<h3>5-Team: $<%= @bankroll.five_team %></h3>
+<h3>10-Team: $<%= @bankroll.ten_team %></h3>
+<h3>GPP @ 20%: $<%= @bankroll.gpp_with_twenty %></h3>
+<h3>GPP @ 5%: $<%= @bankroll.gpp_with_five %></h3>
+<h3>GPP @ 2%: $<%= @bankroll.gpp_with_two %></h3>
+
+<h4><%= @quarterbacks.cash_plays %></h4>
+
+<div>
+	<h2>Top 5 Projected All</h2>
+	<% @all_players.top_projected.each do |all| %>
+		<%= "#{all[:name]}\t(#{all[:avg_proj]})" %><br>
+	<% end %>
+</div>
+
+<div>
+	<h2>Top 10 Value All</h2>
+	<% @all_players.top_value.each do |all| %>
+		<%= "#{all[:name]}\t(#{all[:ppd]})" %><br>
+	<% end %>
+</div>
+
+<div>
+	<h2>Top 10 Ceiling All</h2>
+	<% @all_players.top_ceiling.each do |all| %>
+		<%= "#{all[:name]}\t(#{all[:ceiling]})" %><br>
+	<% end %>
+</div>
+
+<div>
+	<h2>Top 10 Floor All</h2>
+	<% @all_players.top_floor.each do |all| %>
+		<%= "#{all[:name]}\t(#{all[:floor]})" %><br>
+	<% end %>
+</div>
+
+<div>
+	<h2>Top 5 GPP All</h2>
+	<% @all_players.top_gpp.each do |all| %>
+		<%= "#{all[:name]}\t(#{all[:ceiling_ppd]})" %><br>
+	<% end %>
+</div>
+
+<br>
+
+<div>
+	<h2>Top 5 Projected QB's</h2>
+	<% @quarterbacks.top_projected.each do |qb| %>
+		<%= "#{qb[:name]}\t(#{qb[:avg_proj]})" %><br>
+	<% end %>
+</div>
+
+<div>
+	<h2>Top 10 Value QB's</h2>
+	<% @quarterbacks.top_value.each do |qb| %>
+		<%= "#{qb[:name]}\t(#{qb[:ppd]})" %><br>
+	<% end %>
+</div>
+
+<div>
+	<h2>Top 10 Ceiling QB's</h2>
+	<% @quarterbacks.top_ceiling.each do |qb| %>
+		<%= "#{qb[:name]}\t(#{qb[:ceiling]})" %><br>
+	<% end %>
+</div>
+
+<div>
+	<h2>Top 10 Floor QB's</h2>
+	<% @quarterbacks.top_floor.each do |qb| %>
+		<%= "#{qb[:name]}\t(#{qb[:floor]})" %><br>
+	<% end %>
+</div>
+
+<div>
+	<h2>Top 5 GPP QB's</h2>
+	<% @quarterbacks.top_gpp.each do |qb| %>
+		<%= "#{qb[:name]}\t(#{qb[:ceiling_ppd]})" %><br>
+	<% end %>
+</div>
+
+<br>
+
+<div>
+	<h2>Top 10 Projected RB's</h2>
+	<% @running_backs.top_projected.each do |rb| %>
+		<%= "#{rb[:name]}\t(#{rb[:avg_proj]})" %><br>
+	<% end %>
+</div>
+
+<div>
+	<h2>Top 10 Value RB's</h2>
+	<% @running_backs.top_value.each do |rb| %>
+		<%= "#{rb[:name]}\t(#{rb[:ppd]})" %><br>
+	<% end %>
+</div>
+
+<div>
+	<h2>Top 10 Ceiling RB's</h2>
+	<% @running_backs.top_ceiling.each do |rb| %>
+		<%= "#{rb[:name]}\t(#{rb[:ceiling]})" %><br>
+	<% end %>
+</div>
+
+<div>
+	<h2>Top 10 Floor RB's</h2>
+	<% @running_backs.top_floor.each do |rb| %>
+		<%= "#{rb[:name]}\t(#{rb[:floor]})" %><br>
+	<% end %>
+</div>
+
+<div>
+	<h2>Top 5 GPP RB's</h2>
+	<% @running_backs.top_gpp.each do |rb| %>
+		<%= "#{rb[:name]}\t(#{rb[:ceiling_ppd]})" %><br>
+	<% end %>
+</div>
+
+<br>
+
+<div>
+	<h2>Top 10 Projected WR's</h2>
+	<% @wide_receivers.top_projected.each do |wr| %>
+		<%= "#{wr[:name]}\t(#{wr[:avg_proj]})" %><br>
+	<% end %>
+</div>
+
+<div>
+	<h2>Top 10 Value WR's</h2>
+	<% @wide_receivers.top_value.each do |wr| %>
+		<%= "#{wr[:name]}\t(#{wr[:ppd]})" %><br>
+	<% end %>
+</div>
+
+<div>
+	<h2>Top 10 Ceiling WR's</h2>
+	<% @wide_receivers.top_ceiling.each do |wr| %>
+		<%= "#{wr[:name]}\t(#{wr[:ceiling]})" %><br>
+	<% end %>
+</div>
+
+<div>
+	<h2>Top 10 Floor WR's</h2>
+	<% @wide_receivers.top_floor.each do |wr| %>
+		<%= "#{wr[:name]}\t(#{wr[:floor]})" %><br>
+	<% end %>
+</div>
+
+<div>
+	<h2>Top 5 GPP WR's</h2>
+	<% @wide_receivers.top_gpp.each do |wr| %>
+		<%= "#{wr[:name]}\t(#{wr[:ceiling_ppd]})" %><br>
+	<% end %>
+</div>
+
+<br>
+
+<div>
+	<h2>Top 5 Projected TE's</h2>
+	<% @tight_ends.top_projected.each do |te| %>
+		<%= "#{te[:name]}\t(#{te[:avg_proj]})" %><br>
+	<% end %>
+</div>
+
+<div>
+	<h2>Top 10 Value TE's</h2>
+	<% @tight_ends.top_value.each do |te| %>
+		<%= "#{te[:name]}\t(#{te[:ppd]})" %><br>
+	<% end %>
+</div>
+
+<div>
+	<h2>Top 10 Ceiling TE's</h2>
+	<% @tight_ends.top_ceiling.each do |te| %>
+		<%= "#{te[:name]}\t(#{te[:ceiling]})" %><br>
+	<% end %>
+</div>
+
+<div>
+	<h2>Top 10 Floor TE's</h2>
+	<% @tight_ends.top_floor.each do |te| %>
+		<%= "#{te[:name]}\t(#{te[:floor]})" %><br>
+	<% end %>
+</div>
+
+<div>
+	<h2>Top 5 GPP TE's</h2>
+	<% @tight_ends.top_gpp.each do |te| %>
+		<%= "#{te[:name]}\t(#{te[:ceiling_ppd]})" %><br>
+	<% end %>
+</div>
+
+
+
+
+</div>
