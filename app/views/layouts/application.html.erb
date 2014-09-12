@@ -5,10 +5,29 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
+<div class="container">
+	<div class="pure-menu pure-menu-open pure-menu-horizontal">
+	    <ul>
+	        <li><%= link_to "Home", root_path %></li>
+	        <li><%= link_to "QB", quarterbacks_path %></li>
+	        <li><%= link_to "RB", runningbacks_path %></li>
+	        <li><%= link_to "WR", widereceivers_path %></li>
+	        <li><%= link_to "TE", tightends_path %></li>
+	    </ul>
+	    <ul>
+	    	<li><%= link_to "Values", values_path %></li>
+	    	<li><%= link_to "Optimal", optimal_path %></li>
+	    </ul>
+	</div>
+
 <%= yield %>
+</div>
 
 </body>
 </html>

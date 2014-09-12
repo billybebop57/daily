@@ -47,7 +47,7 @@ class RunningBacks
 
 	def top_value
 		top = $running_backs.sort_by! { |rb| rb[:ppd].to_f }.reverse!
-		top.first(10)
+		top.select { |qb| qb[:ppd].to_f > 2.5 }
 	end
 
 	def top_ceiling
@@ -63,7 +63,12 @@ class RunningBacks
 	def top_gpp
 		top = $running_backs.sort_by! { |rb| rb[:ceiling_ppd].to_f }.reverse!
 		top.first(5)
-	end	
+	end
+
+	def cash_plays
+		cash_plays = [top_projected, top_value, top_floor].flatten!
+		cash_plays.select { |rb| cash_plays.count(rb) == 3 }.uniq!
+	end
 end
 
 

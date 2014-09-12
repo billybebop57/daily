@@ -1,0 +1,37 @@
+<h1>Wide Receivers</h1>
+<h2>Optimal Cash Plays</h2>
+<% @wide_receivers.cash_plays.each do |wr| %>
+	<%= "#{wr[:name]}\t(#{wr[:avg_proj].to_f.round(1)})" %><br>
+<% end %>
+<div class="pure-g">
+	    <div class="pure-u-1-5">
+	    	<h2>Top 15 Projected</h2>
+			<% @wide_receivers.top_projected.each do |wr| %>
+				<%= "#{wr[:name]}\t(#{wr[:avg_proj].to_f.round(1)})" %><br>
+			<% end %>
+	    </div>
+	    <div class="pure-u-1-5">
+	    	<h2>Top Value</h2>
+			<% @wide_receivers.top_value.each do |wr| %>
+				<%= "#{wr[:name]}\t(#{wr[:ppd].to_f.round(1)})" %><br>
+			<% end %>
+	    </div>
+	    <div class="pure-u-1-5">
+			<h2>Top 15 Ceiling</h2>
+			<% @wide_receivers.top_ceiling.each do |wr| %>
+				<%= "#{wr[:name]}\t(#{wr[:ceiling].to_f.round(1)})" %><br>
+			<% end %>
+	    </div>
+	    <div class="pure-u-1-5">
+	    	<h2>Top 15 Floor</h2>
+			<% @wide_receivers.top_floor.each do |wr| %>
+				<%= "#{wr[:name]}\t(#{wr[:floor].to_f.round(1)})" %><br>
+			<% end %>
+	    </div>
+	    <div class="pure-u-1-5">
+	    	<h2>Top 15 GPP</h2>
+			<% @wide_receivers.top_gpp.each do |wr| %>
+				<%= "#{wr[:name]}\t(#{wr[:ceiling_ppd].to_f.round(1)})" %><br>
+			<% end %>
+	    </div>
+	</div>

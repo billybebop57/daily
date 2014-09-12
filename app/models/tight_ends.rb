@@ -49,7 +49,7 @@ class TightEnds
 
 	def top_value
 		top = $tight_ends.sort_by! { |te| te[:ppd].to_f }.reverse!
-		top.first(10)
+		top.select { |qb| qb[:ppd].to_f > 2.5 }
 	end
 
 	def top_ceiling
@@ -65,5 +65,10 @@ class TightEnds
 	def top_gpp
 		top = $tight_ends.sort_by! { |te| te[:ceiling_ppd].to_f }.reverse!
 		top.first(5)
+	end
+
+	def cash_plays
+		cash_plays = [top_projected, top_value, top_floor].flatten!
+		cash_plays.select { |te| cash_plays.count(te) == 3 }.uniq!
 	end					   
 end																																																																				

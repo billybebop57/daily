@@ -44,26 +44,31 @@ class WideReceivers
 
 	def top_projected
 		top = $wide_receivers.sort_by! { |wr| wr[:avg_proj].to_f }.reverse!
-		top.first(10)
+		top.first(15)
 	end
 
 	def top_value
 		top = $wide_receivers.sort_by! { |wr| wr[:ppd].to_f }.reverse!
-		top.first(10)
+		top.select { |qb| qb[:ppd].to_f > 2.5 }
 	end
 
 	def top_ceiling
 		top = $wide_receivers.sort_by! { |wr| wr[:ceiling].to_f }.reverse!
-		top.first(10)
+		top.first(15)
 	end
 
 	def top_floor
 		top = $wide_receivers.sort_by! { |wr| wr[:floor].to_f }.reverse!
-		top.first(10)
+		top.first(15)
 	end
 
 	def top_gpp
 		top = $wide_receivers.sort_by! { |wr| wr[:ceiling_ppd].to_f }.reverse!
-		top.first(5)
-	end					   
+		top.first(15)
+	end
+
+	def cash_plays
+		cash_plays = [top_projected, top_value, top_floor].flatten!
+		cash_plays.select { |wr| cash_plays.count(wr) == 3 }.uniq!
+	end			   
 end																																																																				

@@ -46,17 +46,17 @@ class Quarterbacks
 
 	def top_value
 		top = $quarterbacks.sort_by! { |qb| qb[:ppd].to_f }.reverse!
-		top.first(10)
+		top.select { |qb| qb[:ppd].to_f > 2.5 }
 	end
 
 	def top_ceiling
 		top = $quarterbacks.sort_by! { |qb| qb[:ceiling].to_f }.reverse!
-		top.first(10)
+		top.first(5)
 	end
 
 	def top_floor
 		top = $quarterbacks.sort_by! { |qb| qb[:floor].to_f }.reverse!
-		top.first(10)
+		top.first(5)
 	end
 
 	def top_gpp
@@ -65,9 +65,8 @@ class Quarterbacks
 	end
 
 	def cash_plays
-		cash_plays = [top_projected, top_value, top_floor]
-		cash_plays += cash_plays.flatten!
-		cash_plays.uniq!
+		cash_plays = [top_projected, top_value, top_floor].flatten!
+		cash_plays.select { |qb| cash_plays.count(qb) == 3 }.uniq!
 	end
 
 end
