@@ -17,3 +17,35 @@
 .container {
 	text-align: center;
 }
+
+h1 {
+	font-family: 'Raleway', sans-serif; font-weight: 500;
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif; font-weight: 300;
+}
+
+.pure-menu.pure-menu-open.pure-menu-horizontal {
+	font-family: 'Raleway', sans-serif; font-weight: 100;
+}
+
+.allplayers {
+	font-size: 30px;
+	text-align: center;
+}
+
+.quarterbacks {
+	font-size: 30px;
+	text-align: center;
+}
+
+.optimal {
+	font-family: 'Raleway', sans-serif; font-weight: 300;
+	
+	text-align: center;
+}
+
+.pure-g {
+	font-family: 'Raleway', sans-serif; font-weight: 100;
+}

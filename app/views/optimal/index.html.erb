@@ -1,26 +1,29 @@
+<h1>Players to Target</h1>
+<h2>(players in top projected, top value, and top floor)</h2>
+
 <div class='pure-g'>
 	 <div class="pure-u-1-4">
 	   	<h2>Quarterbacks</h2>
 		<% @quarterbacks.cash_plays.each do |qb| %>
-			<%= "#{qb[:name]}\t(#{qb[:ppd].to_f.round(1)})" %><br>
+			<%= "#{qb[:name]}\t(#{qb[:ppd].to_f.round(1)} ppd)" %><br>
 		<% end %>
 	 </div>
 	 <div class="pure-u-1-4">
 	   	<h2>Running Backs</h2>
 		<% @running_backs.cash_plays.each do |qb| %>
-			<%= "#{qb[:name]}\t(#{qb[:ppd].to_f.round(1)})" %><br>
+			<%= "#{qb[:name]}\t(#{qb[:ppd].to_f.round(1)} ppd)" %><br>
 		<% end %>
 	 </div>
 	 <div class="pure-u-1-4">
 	   	<h2>Wide Receivers</h2>
 		<% @wide_receivers.cash_plays.each do |qb| %>
-			<%= "#{qb[:name]}\t(#{qb[:ppd].to_f.round(1)})" %><br>
+			<%= "#{qb[:name]}\t(#{qb[:ppd].to_f.round(1)} ppd)" %><br>
 		<% end %>
 	 </div>
 	 <div class="pure-u-1-4">
 	   	<h2>Tight Ends</h2>
 		<% @tight_ends.cash_plays.each do |qb| %>
-			<%= "#{qb[:name]}\t(#{qb[:ppd].to_f.round(1)})" %><br>
+			<%= "#{qb[:name]}\t(#{qb[:ppd].to_f.round(1)} ppd)" %><br>
 		<% end %>
 	 </div>
 </div>

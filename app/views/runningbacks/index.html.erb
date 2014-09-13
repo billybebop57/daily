@@ -1,37 +1,39 @@
 <h1>Running Backs</h1>
 <h2>Optimal Cash Plays</h2>
-<% @running_backs.cash_plays.each do |rb| %>
-	<%= "#{rb[:name]}\t(#{rb[:avg_proj].to_f.round(1)})" %><br>
-<% end %>
+	<div class='optimal'>
+		<% @running_backs.cash_plays.each do |rb| %>
+			<%= "#{rb[:name]}\t(#{rb[:avg_proj].to_f.round(1)} pts)" %><br>
+		<% end %>
+	</div>
 <div class="pure-g">
 	    <div class="pure-u-1-5">
 	    	<h2>Top 5 Projected</h2>
 			<% @running_backs.top_projected.each do |rb| %>
-				<%= "#{rb[:name]}\t(#{rb[:avg_proj].to_f.round(1)})" %><br>
+				<%= "#{rb[:name]}\t(#{rb[:avg_proj].to_f.round(1)} pts)" %><br>
 			<% end %>
 	    </div>
 	    <div class="pure-u-1-5">
 	    	<h2>Top Value</h2>
 			<% @running_backs.top_value.each do |rb| %>
-				<%= "#{rb[:name]}\t(#{rb[:ppd].to_f.round(1)})" %><br>
+				<%= "#{rb[:name]}\t(#{rb[:avg_proj].to_f.round(1)} pts)" %><br>
 			<% end %>
 	    </div>
 	    <div class="pure-u-1-5">
 			<h2>Top 5 Ceiling</h2>
 			<% @running_backs.top_ceiling.each do |rb| %>
-				<%= "#{rb[:name]}\t(#{rb[:ceiling].to_f.round(1)})" %><br>
+				<%= "#{rb[:name]}\t(#{rb[:ceiling].to_f.round(1)} pts)" %><br>
 			<% end %>
 	    </div>
 	    <div class="pure-u-1-5">
 	    	<h2>Top 5 Floor</h2>
 			<% @running_backs.top_floor.each do |rb| %>
-				<%= "#{rb[:name]}\t(#{rb[:floor].to_f.round(1)})" %><br>
+				<%= "#{rb[:name]}\t(#{rb[:floor].to_f.round(1)} pts)" %><br>
 			<% end %>
 	    </div>
 	    <div class="pure-u-1-5">
 	    	<h2>Top 5 GPP</h2>
 			<% @running_backs.top_gpp.each do |rb| %>
-				<%= "#{rb[:name]}\t(#{rb[:ceiling_ppd].to_f.round(1)})" %><br>
+				<%= "#{rb[:name]}\t(#{rb[:ceiling].to_f.round(1)} pts)" %><br>
 			<% end %>
 	    </div>
 	</div>

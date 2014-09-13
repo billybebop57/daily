@@ -1,38 +1,40 @@
 <h1>Quarterbacks</h1>
 <h2>Optimal Cash Plays</h2>
-<% @quarterbacks.cash_plays.each do |qb| %>
-	<%= "#{qb[:name]}\t(#{qb[:avg_proj].to_f.round(1)})" %><br>
-<% end %>
+	<div class='optimal'>
+		<% @quarterbacks.cash_plays.each do |qb| %>
+			<%= "#{qb[:name]}\t(#{qb[:avg_proj].to_f.round(1)} pts)" %><br>
+		<% end %>
+	</div>
 
 <div class="pure-g">
 	    <div class="pure-u-1-5">
 	    	<h2>Top 5 Projected</h2>
 			<% @quarterbacks.top_projected.each do |qb| %>
-				<%= "#{qb[:name]}\t(#{qb[:avg_proj].to_f.round(1)})" %><br>
+				<%= "#{qb[:name]}\t(#{qb[:avg_proj].to_f.round(1)} pts)" %><br>
 			<% end %>
 	    </div>
 	    <div class="pure-u-1-5">
 	    	<h2>Top Value</h2>
 			<% @quarterbacks.top_value.each do |qb| %>
-				<%= "#{qb[:name]}\t(#{qb[:ppd].to_f.round(1)})" %><br>
+				<%= "#{qb[:name]}\t(#{qb[:avg_proj].to_f.round(1)} pts)" %><br>
 			<% end %>
 	    </div>
 	    <div class="pure-u-1-5">
 			<h2>Top 5 Ceiling</h2>
 			<% @quarterbacks.top_ceiling.each do |qb| %>
-				<%= "#{qb[:name]}\t(#{qb[:ceiling].to_f.round(1)})" %><br>
+				<%= "#{qb[:name]}\t(#{qb[:ceiling].to_f.round(1)} pts)" %><br>
 			<% end %>
 	    </div>
 	    <div class="pure-u-1-5">
 	    	<h2>Top 5 Floor</h2>
 			<% @quarterbacks.top_floor.each do |qb| %>
-				<%= "#{qb[:name]}\t(#{qb[:floor].to_f.round(1)})" %><br>
+				<%= "#{qb[:name]}\t(#{qb[:floor].to_f.round(1)} pts)" %><br>
 			<% end %>
 	    </div>
 	    <div class="pure-u-1-5">
 	    	<h2>Top 5 GPP</h2>
 			<% @quarterbacks.top_gpp.each do |qb| %>
-				<%= "#{qb[:name]}\t(#{qb[:ceiling_ppd].to_f.round(1)})" %><br>
+				<%= "#{qb[:name]}\t(#{qb[:ceiling].to_f.round(1)} pts)" %><br>
 			<% end %>
 	    </div>
 	</div>

@@ -35,11 +35,8 @@ class TightEnds
 	{ name: dk_te_w2[26, 1], avg_proj: dk_te_w2[26, 8], ceiling: dk_te_w2[26, 6], floor: dk_te_w2[26, 7], salary: dk_te_w2[26, 9], dpp: dk_te_w2[26, 10], ppd: dk_te_w2[26, 11], ceiling_ppd: dk_te_w2[26, 12], actual_pts: dk_te_w2[26, 13], proj_gap: dk_te_w2[26, 14] },
 	{ name: dk_te_w2[27, 1], avg_proj: dk_te_w2[27, 8], ceiling: dk_te_w2[27, 6], floor: dk_te_w2[27, 7], salary: dk_te_w2[27, 9], dpp: dk_te_w2[27, 10], ppd: dk_te_w2[27, 11], ceiling_ppd: dk_te_w2[27, 12], actual_pts: dk_te_w2[27, 13], proj_gap: dk_te_w2[27, 14] },
 	{ name: dk_te_w2[28, 1], avg_proj: dk_te_w2[28, 8], ceiling: dk_te_w2[28, 6], floor: dk_te_w2[28, 7], salary: dk_te_w2[28, 9], dpp: dk_te_w2[28, 10], ppd: dk_te_w2[28, 11], ceiling_ppd: dk_te_w2[28, 12], actual_pts: dk_te_w2[28, 13], proj_gap: dk_te_w2[28, 14] },
-	{ name: dk_te_w2[29, 1], avg_proj: dk_te_w2[29, 8], ceiling: dk_te_w2[29, 6], floor: dk_te_w2[29, 7], salary: dk_te_w2[29, 9], dpp: dk_te_w2[29, 10], ppd: dk_te_w2[29, 11], ceiling_ppd: dk_te_w2[29, 12], actual_pts: dk_te_w2[29, 13], proj_gap: dk_te_w2[29, 14] },
-	{ name: dk_te_w2[30, 1], avg_proj: dk_te_w2[30, 8], ceiling: dk_te_w2[30, 6], floor: dk_te_w2[30, 7], salary: dk_te_w2[30, 9], dpp: dk_te_w2[30, 10], ppd: dk_te_w2[30, 11], ceiling_ppd: dk_te_w2[30, 12], actual_pts: dk_te_w2[30, 13], proj_gap: dk_te_w2[30, 14] },
-	{ name: dk_te_w2[31, 1], avg_proj: dk_te_w2[31, 8], ceiling: dk_te_w2[31, 6], floor: dk_te_w2[31, 7], salary: dk_te_w2[31, 9], dpp: dk_te_w2[31, 10], ppd: dk_te_w2[31, 11], ceiling_ppd: dk_te_w2[31, 12], actual_pts: dk_te_w2[31, 13], proj_gap: dk_te_w2[31, 14] },
-	{ name: dk_te_w2[32, 1], avg_proj: dk_te_w2[32, 8], ceiling: dk_te_w2[32, 6], floor: dk_te_w2[32, 7], salary: dk_te_w2[32, 9], dpp: dk_te_w2[32, 10], ppd: dk_te_w2[32, 11], ceiling_ppd: dk_te_w2[32, 12], actual_pts: dk_te_w2[32, 13], proj_gap: dk_te_w2[32, 14] }
-]
+	{ name: dk_te_w2[29, 1], avg_proj: dk_te_w2[29, 8], ceiling: dk_te_w2[29, 6], floor: dk_te_w2[29, 7], salary: dk_te_w2[29, 9], dpp: dk_te_w2[29, 10], ppd: dk_te_w2[29, 11], ceiling_ppd: dk_te_w2[29, 12], actual_pts: dk_te_w2[29, 13], proj_gap: dk_te_w2[29, 14] }
+																																																																				]
 	
 
 	def top_projected
