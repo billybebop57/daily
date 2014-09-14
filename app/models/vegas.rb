@@ -25,22 +25,22 @@ class Vegas
 		{ home_team: dk_vegas[17, 1], away_team: dk_vegas[17, 2], spread: dk_vegas[17, 3], total: dk_vegas[17, 4], home_total: dk_vegas[17, 5], away_total: dk_vegas[17, 6] }
 						   																																																																]
 	def highest_total
-		top = $vegas.sort_by! { |qb| qb[:total].to_f }.reverse!
+		top = $vegas.sort_by! { |v| v[:total].to_f }.reverse!
 	end
 
 	def home_total
-		top = $vegas.sort_by! { |qb| qb[:home_total].to_f }.reverse!
+		top = $vegas.sort_by! { |v| v[:home_total].to_f }.reverse!
 	end
 
 	def away_total
-		top = $vegas.sort_by! { |qb| qb[:away_total].to_f }.reverse!
+		top = $vegas.sort_by! { |v| v[:away_total].to_f }.reverse!
 	end
 
 	def highest_spread
-		top = $vegas.sort_by! { |qb| qb[:spread].to_f }
+		top = $vegas.sort_by! { |v| v[:spread].to_f }
 	end
 
 	def optimal
-		highest_total.first(5)
+		highest_total.select { |total| total[:total].to_f > 45 }
 	end
 end

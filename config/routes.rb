@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/tightends/', to: 'tightends#index', as: 'tightends'
   get '/values/', to: 'value#index', as: 'values'
   get '/optimal/', to: 'optimal#index', as: 'optimal'
+  get '/vegas/', to: 'vegas#index', as: 'vegas'
 
 
 end
