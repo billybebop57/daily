@@ -68,7 +68,6 @@ class Quarterbacks
 		cash_plays = [top_projected, top_value, top_floor].flatten!
 		cash_plays.select { |qb| cash_plays.count(qb) == 3 }.uniq!
 	end
-
 end
 
 
