@@ -61,7 +61,7 @@ class TightEnds
 
 	def top_gpp
 		top = $tight_ends.sort_by! { |te| te[:ceiling_ppd].to_f }.reverse!
-		top.first(5)
+		top.first(10)
 	end
 
 	def cash_plays

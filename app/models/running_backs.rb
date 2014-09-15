@@ -82,7 +82,7 @@ class RunningBacks
 
 	def top_gpp
 		top = $running_backs.sort_by! { |rb| rb[:ceiling_ppd].to_f }.reverse!
-		top.first(5)
+		top.first(10)
 	end
 
 	def cash_plays
