@@ -6,34 +6,16 @@
 		<% end %>
 	</div>
 <div class="pure-g">
-	    <div class="pure-u-1-5">
+	    <div class="pure-u-1-2">
 	    	<h2>Top 10 Projected</h2>
 			<% @running_backs.top_projected.each do |rb| %>
 				<%= "#{rb[:name]}\t(#{rb[:avg_proj].to_f.round(1)} pts)" %><br>
 			<% end %>
 	    </div>
-	    <div class="pure-u-1-5">
+	    <div class="pure-u-1-2">
 	    	<h2>Top Value</h2>
 			<% @running_backs.top_value.each do |rb| %>
 				<%= "#{rb[:name]}\t(#{rb[:avg_proj].to_f.round(1)} pts)" %><br>
-			<% end %>
-	    </div>
-	    <div class="pure-u-1-5">
-			<h2>Top 10 Ceiling</h2>
-			<% @running_backs.top_ceiling.each do |rb| %>
-				<%= "#{rb[:name]}\t(#{rb[:ceiling].to_f.round(1)} pts)" %><br>
-			<% end %>
-	    </div>
-	    <div class="pure-u-1-5">
-	    	<h2>Top 10 Floor</h2>
-			<% @running_backs.top_floor.each do |rb| %>
-				<%= "#{rb[:name]}\t(#{rb[:floor].to_f.round(1)} pts)" %><br>
-			<% end %>
-	    </div>
-	    <div class="pure-u-1-5">
-	    	<h2>Top 10 GPP</h2>
-			<% @running_backs.top_gpp.each do |rb| %>
-				<%= "#{rb[:name]}\t(#{rb[:ceiling].to_f.round(1)} pts)" %><br>
 			<% end %>
 	    </div>
 	</div>

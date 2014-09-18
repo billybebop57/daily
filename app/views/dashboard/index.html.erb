@@ -15,24 +15,6 @@
 				<%= "#{all[:name]}\t(#{all[:avg_proj].to_f.round(1)} pts)" %><br>
 			<% end %>
 	    </div>
-	    <div class="pure-u-1-5">
-	    	<h2>Top 5 Ceiling</h2>
-			<% @all_players.top_ceiling.each do |all| %>
-				<%= "#{all[:name]}\t(#{all[:ceiling].to_f.round(1)} pts)" %><br>
-			<% end %>
-	    </div>
-	    <div class="pure-u-1-5">
-	    	<h2>Top 5 Floor</h2>
-			<% @all_players.top_floor.each do |all| %>
-				<%= "#{all[:name]}\t(#{all[:floor].to_f.round(1)} pts)" %><br>
-			<% end %>
-	    </div>
-	    <div class="pure-u-1-5">
-	    	<h2>Top 5 GPP</h2>
-			<% @all_players.top_gpp.each do |all| %>
-				<%= "#{all[:name]}\t(#{all[:ceiling].to_f.round(1)} pts)" %><br>
-			<% end %>
-	    </div>
 	</div>
 
 </div>

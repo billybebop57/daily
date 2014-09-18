@@ -7,34 +7,16 @@
 	</div>
 
 	<div class="pure-g">
-	    <div class="pure-u-1-5">
+	    <div class="pure-u-1-2">
 	    	<h2>Top 5 Projected TE's</h2>
 			<% @tight_ends.top_projected.each do |te| %>
 				<%= "#{te[:name]}\t(#{te[:avg_proj].to_f.round(1)} pts)" %><br>
 			<% end %>
 	    </div>
-	    <div class="pure-u-1-5">
+	    <div class="pure-u-1-2">
 	    	<h2>Top Value TE's</h2>
 			<% @tight_ends.top_value.each do |te| %>
 				<%= "#{te[:name]}\t(#{te[:avg_proj].to_f.round(1)} pts)" %><br>
-			<% end %>
-	    </div>
-	    <div class="pure-u-1-5">
-			<h2>Top 10 Ceiling TE's</h2>
-			<% @tight_ends.top_ceiling.each do |te| %>
-				<%= "#{te[:name]}\t(#{te[:ceiling].to_f.round(1)} pts)" %><br>
-			<% end %>
-	    </div>
-	    <div class="pure-u-1-5">
-	    	<h2>Top 10 Floor TE's</h2>
-			<% @tight_ends.top_floor.each do |te| %>
-				<%= "#{te[:name]}\t(#{te[:floor].to_f.round(1)} pts)" %><br>
-			<% end %>
-	    </div>
-	    <div class="pure-u-1-5">
-	    	<h2>Top 10 GPP TE's</h2>
-			<% @tight_ends.top_gpp.each do |te| %>
-				<%= "#{te[:name]}\t(#{te[:ceiling].to_f.round(1)} pts)" %><br>
 			<% end %>
 	    </div>
 	</div>
