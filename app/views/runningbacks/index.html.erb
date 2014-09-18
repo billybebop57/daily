@@ -1,7 +1,7 @@
 <h1>Running Backs</h1>
 <h2>Optimal Cash Plays</h2>
 	<div class='optimal'>
-		<% @running_backs.cash_plays.each do |rb| %>
+		<% @running_backs.optimal.each do |rb| %>
 			<%= "#{rb[:name]}\t(#{rb[:avg_proj].to_f.round(1)} pts)" %><br>
 		<% end %>
 	</div>

@@ -1,7 +1,7 @@
 <h1>Wide Receivers</h1>
 <h2>Optimal Cash Plays</h2>
 	<div class='optimal'>
-		<% @wide_receivers.cash_plays.each do |wr| %>
+		<% @wide_receivers.optimal.each do |wr| %>
 			<%= "#{wr[:name]}\t(#{wr[:avg_proj].to_f.round(1)} pts)" %><br>
 		<% end %>
 	</div>

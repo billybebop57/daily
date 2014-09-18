@@ -20,12 +20,18 @@
 
 h1 {
 	font-family: 'Raleway', sans-serif; font-weight: 500;
-	color: #4575d4;
+	color: #34495e;
 }
 
 h2 {
 	font-family: 'Raleway', sans-serif; font-weight: 300;
 	color: #009d91;
+}
+
+p {
+	font-family: 'Raleway', sans-serif; font-weight: 100;
+	color: #34495e;
+	font-size: 50px;
 }
 
 .pure-menu.pure-menu-open.pure-menu-horizontal {
@@ -44,7 +50,7 @@ h2 {
 
 .optimal {
 	font-family: 'Raleway', sans-serif; font-weight: 300;
-	color: #4575d4;
+	color: #34495e;
 	text-align: center;
 }
 

@@ -1,7 +1,7 @@
 <h1>Tight Ends</h1>
 <h2>Optimal Cash Plays</h2>
 	<div class='optimal'>
-		<% @tight_ends.cash_plays.each do |te| %>
+		<% @tight_ends.optimal.each do |te| %>
 			<%= "#{te[:name]}\t(#{te[:avg_proj].to_f.round(1)} pts)" %><br>
 		<% end %>
 	</div>

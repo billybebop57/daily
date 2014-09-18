@@ -197,6 +197,9 @@ class Bankroll
 	def gpp_with_fourteen
 		((0.86/6) * (0.14) * (@bankroll)).round(2)
 	end
+	def gpp_with_ten
+		((0.9/6) * (0.1) * (@bankroll)).round(2)
+	end
 
 	def gpp_with_five
 		((0.95/6) * (0.05) * (@bankroll)).round(2)

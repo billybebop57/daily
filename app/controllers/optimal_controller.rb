@@ -6,5 +6,6 @@ class OptimalController < ApplicationController
 		@running_backs = RunningBacks.new																																																																			
 		@wide_receivers = WideReceivers.new																																																																			
 		@tight_ends = TightEnds.new	
+		@defense = Defense.new
 	end
 end
