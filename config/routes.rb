@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/values/', to: 'value#index', as: 'values'
   get '/optimal/', to: 'optimal#index', as: 'optimal'
   get '/vegas/', to: 'vegas#index', as: 'vegas'
+  get '/targets/', to: 'targets#index', as: 'targets'
 
 
 end

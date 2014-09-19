@@ -86,7 +86,7 @@ class RunningBacks
 	end
 
 	def optimal
-		grade = $running_backs.select { |rb| rb[:grade] == 'A' || rb[:grade] == 'B' }
+		grade = $running_backs.select { |rb| rb[:grade] == 'A' }
 		optimal = [top_value, grade].flatten!
 		optimal.select { |rb| optimal.count(rb) == 2 && optimal.count(rb) }.uniq!
 	end

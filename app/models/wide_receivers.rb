@@ -105,7 +105,7 @@ class WideReceivers
 	end
 
 	def optimal
-		grade = $wide_receivers.select { |wr| wr[:grade] == 'A' || wr[:grade] == 'B' }
+		grade = $wide_receivers.select { |wr| wr[:grade] == 'A' }
 		optimal = [top_value, grade].flatten!
 		optimal.select { |wr| optimal.count(wr) == 2 && optimal.count(wr) }.uniq!
 	end			   

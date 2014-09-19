@@ -49,11 +49,13 @@ p {
 }
 
 .optimal {
-	font-family: 'Raleway', sans-serif; font-weight: 300;
+	font-family: 'Raleway', sans-serif; font-weight: 500;
 	color: #34495e;
 	text-align: center;
 }
 
 .pure-g {
-	font-family: 'Raleway', sans-serif; font-weight: 100;
+	font-family: 'Raleway', sans-serif; font-weight: 500;
+	color: #34495e;
+	font-size: 15px;
 }

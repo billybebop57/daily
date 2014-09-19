@@ -1,0 +1,35 @@
+<h1>Targets</h1>
+<h2>Optimal Cash Plays</h2>
+<div class='optimal'>
+		<% @targets.optimal.each do |rb| %>
+			<%= "#{rb[:name]}" %><br>
+		<% end %>
+	</div>
+
+<div class="pure-g">
+	    <div class="pure-u-1-4">
+	    	<h2>Top 10 Targeted</h2>
+			<% @targets.top_targets.each do |t| %>
+				<%= "#{t[:name]}\t(#{t[:tg].to_f.round(1)} t/g)" %><br>
+			<% end %>
+	    </div>
+	    <div class="pure-u-1-4">
+	    	<h2>Top 10 Receptions</h2>
+			<% @targets.top_receptions.each do |t| %>
+				<%= "#{t[:name]}\t(#{t[:rec]} catches)" %><br>
+			<% end %>
+	    </div>
+	    <div class="pure-u-1-4">
+	    	<h2>Top 10 Yards</h2>
+			<% @targets.top_yards.each do |t| %>
+				<%= "#{t[:name]}\t(#{t[:yds]} yds)" %><br>
+			<% end %>
+	    </div>
+	    <div class="pure-u-1-4">
+	    	<h2>Top REC %</h2>
+			<% @targets.top_rec_p.each do |t| %>
+				<%= "#{t[:name]}\t(#{t[:rec_p].to_f.round(1)}%)" %><br>
+			<% end %>
+	    </div>
+	    
+	</div>

@@ -48,7 +48,7 @@ class Quarterbacks
 	end
 
 	def optimal
-		grade = $quarterbacks.select { |qb| qb[:grade] == 'A' || qb[:grade] == 'B' }
+		grade = $quarterbacks.select { |qb| qb[:grade] == 'A' }
 		optimal = [top_value, grade].flatten!
 		optimal.select { |qb| optimal.count(qb) == 2 && optimal.count(qb) }.uniq!
 	end

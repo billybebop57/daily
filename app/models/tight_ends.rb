@@ -47,7 +47,7 @@ class TightEnds
 	end
 
 	def optimal
-		grade = $tight_ends.select { |te| te[:grade] == 'A' || te[:grade] == 'B' }
+		grade = $tight_ends.select { |te| te[:grade] == 'A' }
 		optimal = [top_value, grade].flatten!
 		optimal.select { |te| optimal.count(te) == 2 && optimal.count(te) }.uniq!
 	end				   
