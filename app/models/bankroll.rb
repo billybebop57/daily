@@ -15,7 +15,6 @@ end
 class Bankroll
 
 	attr_reader :bankroll
-	attr_reader :payout
 
 	def initialize(bankroll)
 		@bankroll = bankroll
