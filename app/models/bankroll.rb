@@ -1,3 +1,8 @@
+class Numeric
+	def percentage
+		self.to_f / 100
+	end
+end	
 	### FORMULAS ###
 
 ## General Distribution of League Play: H2H - 60%, 50/50 - 20%, Tournament - 10%, Other - 10%
@@ -19,8 +24,10 @@ class Bankroll
 	# 50/50 & H2H
 
 
-	def fifty_fifty
-		((0.5/6) * (0.5) * (@bankroll)).round(2)
+	def fifty_fifty(payout)
+		expected_payout = payout.percentage
+		amount_to_decrease = (1.0 - expected_payout)
+		((amount_to_decrease/6) * (expected_payout) * (@bankroll)).round(2)
 	end
 
 	def two_fifty_fifty
