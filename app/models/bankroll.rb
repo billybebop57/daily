@@ -24,7 +24,7 @@ class Bankroll
 	# 50/50 & H2H
 
 
-	def fifty_fifty(payout)
+	def league_payout(payout)
 		expected_payout = payout.percentage
 		amount_to_decrease = (1.0 - expected_payout)
 		((amount_to_decrease/6) * (expected_payout) * (@bankroll)).round(2)
