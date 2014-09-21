@@ -12,26 +12,46 @@
 </head>
 <body>
 
-<div class="container">
-	<div class="pure-menu pure-menu-open pure-menu-horizontal">
-	    <ul>
-	        <li><%= link_to "Home", root_path %></li>
-	        <li><%= link_to "QB", quarterbacks_path %></li>
-	        <li><%= link_to "RB", runningbacks_path %></li>
-	        <li><%= link_to "WR", widereceivers_path %></li>
-	        <li><%= link_to "TE", tightends_path %></li>
-	        <li><%= link_to "DEF", defense_path %></li>
-	    </ul>
-	    <ul>
-	    	<li><%= link_to "Vegas", vegas_path %></li>
+<div id="demo-horizontal-menu">
+    <ul id="std-menu-items">
+        <li><%= link_to "Home", root_path %></li>
+        
+        <li>
+            <%= link_to "QB", quarterbacks_path %>
+            <ul>
+                <li><%= link_to "RB", runningbacks_path %></li>
+                <li><%= link_to "WR", widereceivers_path %></li>
+                <li><%= link_to "TE", tightends_path %></li>
+                <li><%= link_to "DEF", defense_path %></li>
+            </ul>
+        </li>
+        	<li><%= link_to "Vegas", vegas_path %></li>
 	    	<li><%= link_to "Targets", targets_path %></li>
 	    	<li><%= link_to "Value", values_path %></li>
 	    	<li><%= link_to "Optimal", optimal_path %></li>
-	    </ul>
-	</div>
+    </ul>
 
 <%= yield %>
 </div>
 
+
+<script>
+YUI({
+    classNamePrefix: 'pure'
+}).use('gallery-sm-menu', function (Y) {
+
+    var horizontalMenu = new Y.Menu({
+        container         : '#demo-horizontal-menu',
+        sourceNode        : '#std-menu-items',
+        orientation       : 'horizontal',
+        hideOnOutsideClick: false,
+        hideOnClick       : false
+    });
+
+    horizontalMenu.render();
+    horizontalMenu.show();
+
+});
+</script>
 </body>
 </html>
