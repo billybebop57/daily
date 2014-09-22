@@ -12,7 +12,7 @@ end
 # [(( Percentage of owners who won't win )/6)] * ( Expected winning percentage ) * ( Bankroll )
 # 3-Team League example: ((0.67/6) * (0.33) * (1000)) == $36.85
 
-class Bankroll < ActiveRecord::Base
+class Bankroll
 
 	attr_reader :bankroll
 
