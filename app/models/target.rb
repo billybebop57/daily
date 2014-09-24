@@ -34,12 +34,8 @@ class Target
 		{ name: dk_targets[27,1], tg: dk_targets[27,5], rec: dk_targets[27,6], yds: dk_targets[27, 7], tds: dk_targets[27, 8], rec_p: dk_targets[27,9] }, 
 		{ name: dk_targets[28,1], tg: dk_targets[28,5], rec: dk_targets[28,6], yds: dk_targets[28, 7], tds: dk_targets[28, 8], rec_p: dk_targets[28,9] }, 
 		{ name: dk_targets[29,1], tg: dk_targets[29,5], rec: dk_targets[29,6], yds: dk_targets[29, 7], tds: dk_targets[29, 8], rec_p: dk_targets[29,9] }, 
-		{ name: dk_targets[30,1], tg: dk_targets[30,5], rec: dk_targets[30,6], yds: dk_targets[30, 7], tds: dk_targets[30, 8], rec_p: dk_targets[30,9] }, 
-		{ name: dk_targets[31,1], tg: dk_targets[31,5], rec: dk_targets[31,6], yds: dk_targets[31, 7], tds: dk_targets[31, 8], rec_p: dk_targets[31,9] }, 
-		{ name: dk_targets[32,1], tg: dk_targets[32,5], rec: dk_targets[32,6], yds: dk_targets[32, 7], tds: dk_targets[32, 8], rec_p: dk_targets[32,9] }, 
-		{ name: dk_targets[33,1], tg: dk_targets[33,5], rec: dk_targets[33,6], yds: dk_targets[33, 7], tds: dk_targets[33, 8], rec_p: dk_targets[33,9] }, 
-		{ name: dk_targets[34,1], tg: dk_targets[34,5], rec: dk_targets[34,6], yds: dk_targets[34, 7], tds: dk_targets[34, 8], rec_p: dk_targets[34,9] } 
-																																									]
+		{ name: dk_targets[30,1], tg: dk_targets[30,5], rec: dk_targets[30,6], yds: dk_targets[30, 7], tds: dk_targets[30, 8], rec_p: dk_targets[30,9] }
+																																							]
 
 	def top_targets
 		top = $targets.sort_by! { |target| target[:tg].to_f }.reverse!
