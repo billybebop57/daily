@@ -2,7 +2,7 @@ class Defense
 
 	session = GoogleDrive.login("ryan.waits@gmail.com", "nzpdpowhazebqvva")
 
-	def_w2 = session.spreadsheet_by_key("1UMX64l5DCEYzupWqZQfImWtaZP68AYpk6dAwLNAqNZI").worksheets[4]
+	def_w2 = session.spreadsheet_by_key("1MuikTo1AkWuT-zEdiK8ROtw5yjJ_ubsS8BLvGaxqOW0").worksheets[4]
 
 	$defense = [ 
 							
