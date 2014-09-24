@@ -31,13 +31,7 @@ class Defense
 		{ name: def_w2[24, 1], position: def_w2[24, 2], avg_proj: def_w2[24, 6], salary: def_w2[24, 7], ppd: def_w2[24, 8], dpp: def_w2[24, 9], grade: def_w2[24, 10] },
 		{ name: def_w2[25, 1], position: def_w2[25, 2], avg_proj: def_w2[25, 6], salary: def_w2[25, 7], ppd: def_w2[25, 8], dpp: def_w2[25, 9], grade: def_w2[25, 10] },
 		{ name: def_w2[26, 1], position: def_w2[26, 2], avg_proj: def_w2[26, 6], salary: def_w2[26, 7], ppd: def_w2[26, 8], dpp: def_w2[26, 9], grade: def_w2[26, 10] },
-		{ name: def_w2[27, 1], position: def_w2[27, 2], avg_proj: def_w2[27, 6], salary: def_w2[27, 7], ppd: def_w2[27, 8], dpp: def_w2[27, 9], grade: def_w2[27, 10] },
-		{ name: def_w2[28, 1], position: def_w2[28, 2], avg_proj: def_w2[28, 6], salary: def_w2[28, 7], ppd: def_w2[28, 8], dpp: def_w2[28, 9], grade: def_w2[28, 10] },
-		{ name: def_w2[29, 1], position: def_w2[29, 2], avg_proj: def_w2[29, 6], salary: def_w2[29, 7], ppd: def_w2[29, 8], dpp: def_w2[29, 9], grade: def_w2[29, 10] },
-		{ name: def_w2[30, 1], position: def_w2[30, 2], avg_proj: def_w2[30, 6], salary: def_w2[30, 7], ppd: def_w2[30, 8], dpp: def_w2[30, 9], grade: def_w2[30, 10] },
-		{ name: def_w2[31, 1], position: def_w2[31, 2], avg_proj: def_w2[31, 6], salary: def_w2[31, 7], ppd: def_w2[31, 8], dpp: def_w2[31, 9], grade: def_w2[31, 10] },
-		{ name: def_w2[32, 1], position: def_w2[32, 2], avg_proj: def_w2[32, 6], salary: def_w2[32, 7], ppd: def_w2[32, 8], dpp: def_w2[32, 9], grade: def_w2[32, 10] },
-		{ name: def_w2[33, 1], position: def_w2[33, 2], avg_proj: def_w2[33, 6], salary: def_w2[33, 7], ppd: def_w2[33, 8], dpp: def_w2[33, 9], grade: def_w2[33, 10] }
+		{ name: def_w2[27, 1], position: def_w2[27, 2], avg_proj: def_w2[27, 6], salary: def_w2[27, 7], ppd: def_w2[27, 8], dpp: def_w2[27, 9], grade: def_w2[27, 10] }
 						   																																				]
 
 	
