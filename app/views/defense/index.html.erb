@@ -2,7 +2,7 @@
 <h2>Optimal Cash Plays</h2>
 	<div class='optimal'>
 		<% @defense.optimal.each do |d| %>
-			<%= "#{d[:name]}\t(#{d[:avg_proj].to_f.round(1)} pts)" %><br>
+			<%= "$#{d[:salary]} - #{d[:name]}\t(#{d[:avg_proj].to_f.round(1)} pts)" %><br>
 		<% end %>
 	</div>
 
@@ -10,13 +10,13 @@
 	    <div class="pure-u-1-2">
 	    	<h2>Top 5 Projected</h2>
 			<% @defense.top_projected.each do |d| %>
-				<%= "#{d[:name]}\t(#{d[:avg_proj].to_f.round(1)} pts)" %><br>
+				<%= "$#{d[:salary]} - #{d[:name]}\t(#{d[:avg_proj].to_f.round(1)} pts)" %><br>
 			<% end %>
 	    </div>
 	    <div class="pure-u-1-2">
 	    	<h2>Top Value</h2>
 			<% @defense.top_value.each do |d| %>
-				<%= "#{d[:name]}\t(#{d[:avg_proj].to_f.round(1)} pts)" %><br>
+				<%= "$#{d[:salary]} - #{d[:name]}\t(#{d[:avg_proj].to_f.round(1)} pts)" %><br>
 			<% end %>
 	    </div>
 	</div>

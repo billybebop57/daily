@@ -2,20 +2,20 @@
 <h2>Optimal Cash Plays</h2>
 	<div class='optimal'>
 		<% @wide_receivers.optimal.each do |wr| %>
-			<%= "#{wr[:name]}\t(#{wr[:avg_proj].to_f.round(1)} pts)" %><br>
+			<%= "$#{wr[:salary]} - #{wr[:name]}\t(#{wr[:avg_proj].to_f.round(1)} pts)" %><br>
 		<% end %>
 	</div>
 <div class="pure-g">
 	    <div class="pure-u-1-2">
 	    	<h2>Top 15 Projected</h2>
 			<% @wide_receivers.top_projected.each do |wr| %>
-				<%= "#{wr[:name]}\t(#{wr[:avg_proj].to_f.round(1)} pts)" %><br>
+				<%= "$#{wr[:salary]} - #{wr[:name]}\t(#{wr[:avg_proj].to_f.round(1)} pts)" %><br>
 			<% end %>
 	    </div>
 	    <div class="pure-u-1-2">
 	    	<h2>Top Value</h2>
 			<% @wide_receivers.top_value.each do |wr| %>
-				<%= "#{wr[:name]}\t(#{wr[:avg_proj].to_f.round(1)} pts)" %><br>
+				<%= "$#{wr[:salary]} - #{wr[:name]}\t(#{wr[:avg_proj].to_f.round(1)} pts)" %><br>
 			<% end %>
 	    </div>
 	</div>

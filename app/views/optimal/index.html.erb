@@ -4,31 +4,31 @@
 	 <div class="pure-u-1-5">
 	   	<h2>Quarterbacks</h2>
 		<% @quarterbacks.optimal.each do |qb| %>
-			<%= "(#{qb[:grade]})\t#{qb[:name]}\t(#{qb[:ppd].to_f.round(1)} ppd)" %><br>
+			<%= "$#{qb[:salary]} - #{qb[:name]}\t(#{qb[:ppd].to_f.round(1)} ppd)" %><br>
 		<% end %>
 	 </div>
 	 <div class="pure-u-1-5">
 	   	<h2>Running Backs</h2>
 		<% @running_backs.optimal.each do |rb| %>
-			<%= "(#{rb[:grade]})\t#{rb[:name]}\t(#{rb[:ppd].to_f.round(1)} ppd)" %><br>
+			<%= "$#{rb[:salary]} - #{rb[:name]}\t(#{rb[:ppd].to_f.round(1)} ppd)" %><br>
 		<% end %>
 	 </div>
 	 <div class="pure-u-1-5">
 	   	<h2>Wide Receivers</h2>
 		<% @wide_receivers.optimal.each do |wr| %>
-			<%= "(#{wr[:grade]})\t#{wr[:name]}\t(#{wr[:ppd].to_f.round(1)} ppd)" %><br>
+			<%= "$#{wr[:salary]} - #{wr[:name]}\t(#{wr[:ppd].to_f.round(1)} ppd)" %><br>
 		<% end %>
 	 </div>
 	 <div class="pure-u-1-5">
 	   	<h2>Tight Ends</h2>
 		<% @tight_ends.optimal.each do |te| %>
-			<%= "(#{te[:grade]})\t#{te[:name]}\t(#{te[:ppd].to_f.round(1)} ppd)" %><br>
+			<%= "$#{te[:salary]} - #{te[:name]}\t(#{te[:ppd].to_f.round(1)} ppd)" %><br>
 		<% end %>
 	 </div>
 	 <div class="pure-u-1-5">
 	   	<h2>Defense</h2>
 		<% @defense.optimal.each do |d| %>
-			<%= "#{d[:name]}\t(#{d[:ppd].to_f.round(1)} ppd)" %><br>
+			<%= "$#{d[:salary]} - #{d[:name]}\t(#{d[:ppd].to_f.round(1)} ppd)" %><br>
 		<% end %>
 	 </div>
 </div>
