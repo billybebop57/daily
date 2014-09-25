@@ -2,7 +2,7 @@
 <h2>Optimal Cash Plays</h2>
 	<div class='optimal'>
 		<% @quarterbacks.optimal.each do |qb| %>
-			<%= "$#{qb[:dpp]}/#{qb[:avg_proj].to_f.round(1)} - #{qb[:name]}" %><br>
+			<%= "$#{qb[:dpp]} / #{qb[:avg_proj].to_f.round(1)} - #{qb[:name]}" %><br>
 		<% end %>
 	</div>
 
@@ -10,13 +10,13 @@
 	   <div class="pure-u-1-2">
 	    <h2>Top 5 Projected</h2>
 		<% @quarterbacks.top_projected.each do |qb| %>
-			<%= "$#{qb[:dpp]}/#{qb[:avg_proj].to_f.round(1)} - #{qb[:name]}" %><br>
+			<%= "$#{qb[:dpp]} / #{qb[:avg_proj].to_f.round(1)} - #{qb[:name]}" %><br>
 		<% end %>
 	   </div>
 	   <div class="pure-u-1-2">
 	    <h2>Top Value</h2>
 		<% @quarterbacks.top_value.each do |qb| %>
-			<%= "$#{qb[:dpp]}/#{qb[:avg_proj].to_f.round(1)} - #{qb[:name]}" %><br>
+			<%= "$#{qb[:dpp]} / #{qb[:avg_proj].to_f.round(1)} - #{qb[:name]}" %><br>
 		<% end %>
 	   </div>
 </div>
