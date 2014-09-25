@@ -4,31 +4,31 @@
 	 <div class="pure-u-1-5">
 	   	<h2>Quarterbacks</h2>
 		<% @quarterbacks.top_value.each do |qb| %>
-			<%= "$#{qb[:salary]} - #{qb[:name]}\t(#{qb[:avg_proj].to_f.round(1)} pts)" %><br>
+			<%= "$#{qb[:dpp]} / #{qb[:avg_proj].to_f.round(1)} - #{qb[:name]}" %><br>
 		<% end %>
 	 </div>
 	 <div class="pure-u-1-5">
 	   	<h2>Running Backs</h2>
 		<% @running_backs.top_value.each do |rb| %>
-			<%= "$#{rb[:salary]} - #{rb[:name]}\t(#{rb[:avg_proj].to_f.round(1)} pts)" %><br>
+			<%= "$#{rb[:dpp]} / #{rb[:avg_proj].to_f.round(1)} - #{rb[:name]}" %><br>
 		<% end %>
 	 </div>
 	 <div class="pure-u-1-5">
 	   	<h2>Wide Receivers</h2>
 		<% @wide_receivers.top_value.each do |wr| %>
-			<%= "$#{wr[:salary]} - #{wr[:name]}\t(#{wr[:avg_proj].to_f.round(1)} pts)" %><br>
+			<%= "$#{wr[:dpp]} / #{wr[:avg_proj].to_f.round(1)} - #{wr[:name]}" %><br>
 		<% end %>
 	 </div>
 	 <div class="pure-u-1-5">
 	   	<h2>Tight Ends</h2>
 		<% @tight_ends.top_value.each do |te| %>
-			<%= "$#{te[:salary]} - #{te[:name]}\t(#{te[:avg_proj].to_f.round(1)} pts)" %><br>
+			<%= "$#{te[:dpp]} / #{te[:avg_proj].to_f.round(1)} - #{te[:name]}" %><br>
 		<% end %>
 	 </div>
 	 <div class="pure-u-1-5">
 	   	<h2>Defense</h2>
 		<% @defense.top_value.each do |d| %>
-			<%= "$#{d[:salary]} - #{d[:name]}\t(#{d[:avg_proj].to_f.round(1)} pts)" %><br>
+			<%= "$#{d[:dpp]} / #{d[:avg_proj].to_f.round(1)} - #{d[:name]}" %><br>
 		<% end %>
 	 </div>
 </div>

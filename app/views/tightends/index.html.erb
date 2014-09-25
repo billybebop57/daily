@@ -2,7 +2,7 @@
 <h2>Optimal Cash Plays</h2>
 	<div class='optimal'>
 		<% @tight_ends.optimal.each do |te| %>
-			<%= "$#{te[:salary]} - #{te[:name]}\t(#{te[:avg_proj].to_f.round(1)} pts)" %><br>
+			<%= "$#{te[:dpp]} / #{te[:avg_proj].to_f.round(1)} - #{te[:name]}" %><br>
 		<% end %>
 	</div>
 
@@ -10,13 +10,13 @@
 	    <div class="pure-u-1-2">
 	    	<h2>Top 5 Projected TE's</h2>
 			<% @tight_ends.top_projected.each do |te| %>
-				<%= "$#{te[:salary]} - #{te[:name]}\t(#{te[:avg_proj].to_f.round(1)} pts)" %><br>
+				<%= "$#{te[:dpp]} / #{te[:avg_proj].to_f.round(1)} - #{te[:name]}" %><br>
 			<% end %>
 	    </div>
 	    <div class="pure-u-1-2">
 	    	<h2>Top Value TE's</h2>
 			<% @tight_ends.top_value.each do |te| %>
-				<%= "$#{te[:salary]} - #{te[:name]}\t(#{te[:avg_proj].to_f.round(1)} pts)" %><br>
+				<%= "$#{te[:dpp]} / #{te[:avg_proj].to_f.round(1)} - #{te[:name]}" %><br>
 			<% end %>
 	    </div>
 	</div>
