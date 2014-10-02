@@ -3,7 +3,7 @@ class WideReceivers
 	session = GoogleDrive.login("ryan.waits@gmail.com", "nzpdpowhazebqvva")
 
 	
-	wr_w2 = session.spreadsheet_by_key("1MuikTo1AkWuT-zEdiK8ROtw5yjJ_ubsS8BLvGaxqOW0").worksheets[2]
+	wr_w2 = session.spreadsheet_by_key("1OZazTQW79t67Lv7M0zPi-ZqOJq5N6dEoAFVb_rgnZx8").worksheets[2]
 
 	$wide_receivers = [ 
 							
@@ -66,7 +66,13 @@ class WideReceivers
 		{ name: wr_w2[58, 1], position: wr_w2[58, 2], avg_proj: wr_w2[58, 6], salary: wr_w2[58, 7], ppd: wr_w2[58, 8], dpp: wr_w2[58, 9], grade: wr_w2[58, 10] },
 		{ name: wr_w2[59, 1], position: wr_w2[59, 2], avg_proj: wr_w2[59, 6], salary: wr_w2[59, 7], ppd: wr_w2[59, 8], dpp: wr_w2[59, 9], grade: wr_w2[59, 10] },
 		{ name: wr_w2[60, 1], position: wr_w2[60, 2], avg_proj: wr_w2[60, 6], salary: wr_w2[60, 7], ppd: wr_w2[60, 8], dpp: wr_w2[60, 9], grade: wr_w2[60, 10] },
-		{ name: wr_w2[61, 1], position: wr_w2[61, 2], avg_proj: wr_w2[61, 6], salary: wr_w2[61, 7], ppd: wr_w2[61, 8], dpp: wr_w2[61, 9], grade: wr_w2[61, 10] }
+		{ name: wr_w2[61, 1], position: wr_w2[61, 2], avg_proj: wr_w2[61, 6], salary: wr_w2[61, 7], ppd: wr_w2[61, 8], dpp: wr_w2[61, 9], grade: wr_w2[61, 10] },
+		{ name: wr_w2[62, 1], position: wr_w2[62, 2], avg_proj: wr_w2[62, 6], salary: wr_w2[62, 7], ppd: wr_w2[62, 8], dpp: wr_w2[62, 9], grade: wr_w2[62, 10] },
+		{ name: wr_w2[63, 1], position: wr_w2[63, 2], avg_proj: wr_w2[63, 6], salary: wr_w2[63, 7], ppd: wr_w2[63, 8], dpp: wr_w2[63, 9], grade: wr_w2[63, 10] },
+		{ name: wr_w2[64, 1], position: wr_w2[64, 2], avg_proj: wr_w2[64, 6], salary: wr_w2[64, 7], ppd: wr_w2[64, 8], dpp: wr_w2[64, 9], grade: wr_w2[64, 10] },
+		{ name: wr_w2[65, 1], position: wr_w2[65, 2], avg_proj: wr_w2[65, 6], salary: wr_w2[65, 7], ppd: wr_w2[65, 8], dpp: wr_w2[65, 9], grade: wr_w2[65, 10] },
+		{ name: wr_w2[66, 1], position: wr_w2[66, 2], avg_proj: wr_w2[66, 6], salary: wr_w2[66, 7], ppd: wr_w2[66, 8], dpp: wr_w2[66, 9], grade: wr_w2[66, 10] },
+		{ name: wr_w2[67, 1], position: wr_w2[67, 2], avg_proj: wr_w2[67, 6], salary: wr_w2[67, 7], ppd: wr_w2[67, 8], dpp: wr_w2[67, 9], grade: wr_w2[67, 10] }
 						   																																			]
 	
 
