@@ -3,7 +3,7 @@ class WideReceivers
 	session = GoogleDrive.login("ryan.waits@gmail.com", "nzpdpowhazebqvva")
 
 	
-	wr_w2 = session.spreadsheet_by_key("1OZazTQW79t67Lv7M0zPi-ZqOJq5N6dEoAFVb_rgnZx8").worksheets[2]
+	wr_w2 = session.spreadsheet_by_key("1BrgXOtJpGDVxQ31OMI5RMwpVF6-KrdRJ6TBJZOuofSc").worksheets[2]
 
 	$wide_receivers = [ 
 							
@@ -72,7 +72,8 @@ class WideReceivers
 		{ name: wr_w2[64, 1], position: wr_w2[64, 2], avg_proj: wr_w2[64, 6], salary: wr_w2[64, 7], ppd: wr_w2[64, 8], dpp: wr_w2[64, 9], grade: wr_w2[64, 10] },
 		{ name: wr_w2[65, 1], position: wr_w2[65, 2], avg_proj: wr_w2[65, 6], salary: wr_w2[65, 7], ppd: wr_w2[65, 8], dpp: wr_w2[65, 9], grade: wr_w2[65, 10] },
 		{ name: wr_w2[66, 1], position: wr_w2[66, 2], avg_proj: wr_w2[66, 6], salary: wr_w2[66, 7], ppd: wr_w2[66, 8], dpp: wr_w2[66, 9], grade: wr_w2[66, 10] },
-		{ name: wr_w2[67, 1], position: wr_w2[67, 2], avg_proj: wr_w2[67, 6], salary: wr_w2[67, 7], ppd: wr_w2[67, 8], dpp: wr_w2[67, 9], grade: wr_w2[67, 10] }
+		{ name: wr_w2[67, 1], position: wr_w2[67, 2], avg_proj: wr_w2[67, 6], salary: wr_w2[67, 7], ppd: wr_w2[67, 8], dpp: wr_w2[67, 9], grade: wr_w2[67, 10] },
+		{ name: wr_w2[68, 1], position: wr_w2[68, 2], avg_proj: wr_w2[68, 6], salary: wr_w2[68, 7], ppd: wr_w2[68, 8], dpp: wr_w2[68, 9], grade: wr_w2[68, 10] }
 						   																																			]
 	
 

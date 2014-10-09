@@ -2,7 +2,7 @@ class RunningBacks
 
 	session = GoogleDrive.login("ryan.waits@gmail.com", "nzpdpowhazebqvva")
 
-	rb_w2 = session.spreadsheet_by_key("1OZazTQW79t67Lv7M0zPi-ZqOJq5N6dEoAFVb_rgnZx8").worksheets[1]
+	rb_w2 = session.spreadsheet_by_key("1BrgXOtJpGDVxQ31OMI5RMwpVF6-KrdRJ6TBJZOuofSc").worksheets[1]
 
 	$running_backs = [ 
 							
@@ -46,9 +46,7 @@ class RunningBacks
 		{ name: rb_w2[39, 1], position: rb_w2[39, 2], avg_proj: rb_w2[39, 6], salary: rb_w2[39, 7], ppd: rb_w2[39, 8], dpp: rb_w2[39, 9], grade: rb_w2[39, 10] },
 		{ name: rb_w2[40, 1], position: rb_w2[40, 2], avg_proj: rb_w2[40, 6], salary: rb_w2[40, 7], ppd: rb_w2[40, 8], dpp: rb_w2[40, 9], grade: rb_w2[40, 10] },
 		{ name: rb_w2[41, 1], position: rb_w2[41, 2], avg_proj: rb_w2[41, 6], salary: rb_w2[41, 7], ppd: rb_w2[41, 8], dpp: rb_w2[41, 9], grade: rb_w2[41, 10] },
-		{ name: rb_w2[42, 1], position: rb_w2[42, 2], avg_proj: rb_w2[42, 6], salary: rb_w2[42, 7], ppd: rb_w2[42, 8], dpp: rb_w2[42, 9], grade: rb_w2[42, 10] },
-		{ name: rb_w2[43, 1], position: rb_w2[43, 2], avg_proj: rb_w2[43, 6], salary: rb_w2[43, 7], ppd: rb_w2[43, 8], dpp: rb_w2[43, 9], grade: rb_w2[43, 10] },
-		{ name: rb_w2[44, 1], position: rb_w2[44, 2], avg_proj: rb_w2[44, 6], salary: rb_w2[44, 7], ppd: rb_w2[44, 8], dpp: rb_w2[44, 9], grade: rb_w2[44, 10] }
+		{ name: rb_w2[42, 1], position: rb_w2[42, 2], avg_proj: rb_w2[42, 6], salary: rb_w2[42, 7], ppd: rb_w2[42, 8], dpp: rb_w2[42, 9], grade: rb_w2[42, 10] }
 						   																																			]
 	
 				   
