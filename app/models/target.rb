@@ -2,7 +2,7 @@ class Target
 
 	session = GoogleDrive.login("ryan.waits@gmail.com", "nzpdpowhazebqvva")
 
-	dk_targets = session.spreadsheet_by_key("1BrgXOtJpGDVxQ31OMI5RMwpVF6-KrdRJ6TBJZOuofSc").worksheets[5]
+	dk_targets = session.spreadsheet_by_key("1deku7hrPJPGn9940EhTIt3WmqfQw7LxJ-M-ifGnpG50").worksheets[5]
 	
 
 	$targets = [

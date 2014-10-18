@@ -2,7 +2,7 @@ class Quarterbacks
 
 	session = GoogleDrive.login("ryan.waits@gmail.com", "nzpdpowhazebqvva")
 
-	qb_w2 = session.spreadsheet_by_key("1BrgXOtJpGDVxQ31OMI5RMwpVF6-KrdRJ6TBJZOuofSc").worksheets[0]
+	qb_w2 = session.spreadsheet_by_key("1deku7hrPJPGn9940EhTIt3WmqfQw7LxJ-M-ifGnpG50").worksheets[0]
 	
 
 	$quarterbacks = [ 
@@ -35,7 +35,8 @@ class Quarterbacks
 		{ name: qb_w2[27, 1], position: qb_w2[27, 2], avg_proj: qb_w2[27, 6], salary: qb_w2[27, 7], ppd: qb_w2[27, 8], dpp: qb_w2[27, 9], grade: qb_w2[27, 10] },
 		{ name: qb_w2[28, 1], position: qb_w2[28, 2], avg_proj: qb_w2[28, 6], salary: qb_w2[28, 7], ppd: qb_w2[28, 8], dpp: qb_w2[28, 9], grade: qb_w2[28, 10] },
 		{ name: qb_w2[29, 1], position: qb_w2[29, 2], avg_proj: qb_w2[29, 6], salary: qb_w2[29, 7], ppd: qb_w2[29, 8], dpp: qb_w2[29, 9], grade: qb_w2[29, 10] },
-		{ name: qb_w2[30, 1], position: qb_w2[30, 2], avg_proj: qb_w2[30, 6], salary: qb_w2[30, 7], ppd: qb_w2[30, 8], dpp: qb_w2[30, 9], grade: qb_w2[30, 10] }
+		{ name: qb_w2[30, 1], position: qb_w2[30, 2], avg_proj: qb_w2[30, 6], salary: qb_w2[30, 7], ppd: qb_w2[30, 8], dpp: qb_w2[30, 9], grade: qb_w2[30, 10] },
+		{ name: qb_w2[31, 1], position: qb_w2[31, 2], avg_proj: qb_w2[31, 6], salary: qb_w2[31, 7], ppd: qb_w2[31, 8], dpp: qb_w2[31, 9], grade: qb_w2[31, 10] }
 						   																																			]
 	def top_projected
 		top = $quarterbacks.sort_by! { |qb| qb[:avg_proj].to_f }.reverse!

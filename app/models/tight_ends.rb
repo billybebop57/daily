@@ -2,7 +2,7 @@ class TightEnds
 
 	session = GoogleDrive.login("ryan.waits@gmail.com", "nzpdpowhazebqvva")
 
-	te_w2 = session.spreadsheet_by_key("1BrgXOtJpGDVxQ31OMI5RMwpVF6-KrdRJ6TBJZOuofSc").worksheets[3]
+	te_w2 = session.spreadsheet_by_key("1deku7hrPJPGn9940EhTIt3WmqfQw7LxJ-M-ifGnpG50").worksheets[3]
 
 	$tight_ends = [ 
 							
@@ -21,17 +21,7 @@ class TightEnds
 		{ name: te_w2[14, 1], position: te_w2[14, 2], avg_proj: te_w2[14, 6], salary: te_w2[14, 7], ppd: te_w2[14, 8], dpp: te_w2[14, 9], grade: te_w2[14, 10] },
 		{ name: te_w2[15, 1], position: te_w2[15, 2], avg_proj: te_w2[15, 6], salary: te_w2[15, 7], ppd: te_w2[15, 8], dpp: te_w2[15, 9], grade: te_w2[15, 10] },
 		{ name: te_w2[16, 1], position: te_w2[16, 2], avg_proj: te_w2[16, 6], salary: te_w2[16, 7], ppd: te_w2[16, 8], dpp: te_w2[16, 9], grade: te_w2[16, 10] },
-		{ name: te_w2[17, 1], position: te_w2[17, 2], avg_proj: te_w2[17, 6], salary: te_w2[17, 7], ppd: te_w2[17, 8], dpp: te_w2[17, 9], grade: te_w2[17, 10] },
-		{ name: te_w2[18, 1], position: te_w2[18, 2], avg_proj: te_w2[18, 6], salary: te_w2[18, 7], ppd: te_w2[18, 8], dpp: te_w2[18, 9], grade: te_w2[18, 10] },
-		{ name: te_w2[19, 1], position: te_w2[19, 2], avg_proj: te_w2[19, 6], salary: te_w2[19, 7], ppd: te_w2[19, 8], dpp: te_w2[19, 9], grade: te_w2[19, 10] },
-		{ name: te_w2[20, 1], position: te_w2[20, 2], avg_proj: te_w2[20, 6], salary: te_w2[20, 7], ppd: te_w2[20, 8], dpp: te_w2[20, 9], grade: te_w2[20, 10] },
-		{ name: te_w2[21, 1], position: te_w2[21, 2], avg_proj: te_w2[21, 6], salary: te_w2[21, 7], ppd: te_w2[21, 8], dpp: te_w2[21, 9], grade: te_w2[21, 10] },
-		{ name: te_w2[22, 1], position: te_w2[22, 2], avg_proj: te_w2[22, 6], salary: te_w2[22, 7], ppd: te_w2[22, 8], dpp: te_w2[22, 9], grade: te_w2[22, 10] },
-		{ name: te_w2[23, 1], position: te_w2[23, 2], avg_proj: te_w2[23, 6], salary: te_w2[23, 7], ppd: te_w2[23, 8], dpp: te_w2[23, 9], grade: te_w2[23, 10] },
-		{ name: te_w2[24, 1], position: te_w2[24, 2], avg_proj: te_w2[24, 6], salary: te_w2[24, 7], ppd: te_w2[24, 8], dpp: te_w2[24, 9], grade: te_w2[24, 10] },
-		{ name: te_w2[25, 1], position: te_w2[25, 2], avg_proj: te_w2[25, 6], salary: te_w2[25, 7], ppd: te_w2[25, 8], dpp: te_w2[25, 9], grade: te_w2[25, 10] },
-		{ name: te_w2[26, 1], position: te_w2[26, 2], avg_proj: te_w2[26, 6], salary: te_w2[26, 7], ppd: te_w2[26, 8], dpp: te_w2[26, 9], grade: te_w2[26, 10] },
-		{ name: te_w2[27, 1], position: te_w2[27, 2], avg_proj: te_w2[27, 6], salary: te_w2[27, 7], ppd: te_w2[27, 8], dpp: te_w2[27, 9], grade: te_w2[27, 10] }
+		{ name: te_w2[17, 1], position: te_w2[17, 2], avg_proj: te_w2[17, 6], salary: te_w2[17, 7], ppd: te_w2[17, 8], dpp: te_w2[17, 9], grade: te_w2[17, 10] }
 						   																																			]
 
 	

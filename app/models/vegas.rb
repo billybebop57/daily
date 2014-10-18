@@ -2,7 +2,7 @@ class Vegas
 
 	session = GoogleDrive.login("ryan.waits@gmail.com", "nzpdpowhazebqvva")
 
-	dk_vegas = session.spreadsheet_by_key("1OZazTQW79t67Lv7M0zPi-ZqOJq5N6dEoAFVb_rgnZx8").worksheets[0]
+	dk_vegas = session.spreadsheet_by_key("1deku7hrPJPGn9940EhTIt3WmqfQw7LxJ-M-ifGnpG50").worksheets[0]
 	
 
 	$vegas = []
